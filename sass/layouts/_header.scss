@@ -1,0 +1,74 @@
+.header {
+    background-color: var(--background-color);
+    display: flex;
+}
+
+.header> .container {
+    @extend %align-element;
+}
+
+.nav {
+    @extend %align-element;
+}
+
+.nav-list {
+    @extend %align-element;
+    gap: 50px;
+}
+
+.nav-link.current::after {
+    @include border(null, 4px);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    // border-radius: 4px;
+    left: 0;
+    background-color: var(--second-text-color);
+    bottom: -32px;
+}
+
+.nav-link.current {
+    position: relative;
+}
+
+.nav-contact {
+    margin-left: auto;
+    gap: 50px;
+    @extend %align-element;
+}
+
+.header {
+    height: 80px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+    & a:hover,
+    & a:focus {
+         color: var(--second-text-color);
+        }
+}
+
+.contact-link,
+.nav-link {
+    @include font(500, null, null, 0.02em);
+    // font-weight: 500;
+    // letter-spacing: 0.02em;
+    color: var(--font-main-color);
+    text-decoration: var(--text-decoration);
+    transition: color 250ms var(--timing-function);
+}
+
+.contact-link {
+    color: var(--owner-text-color);
+    text-decoration: var(--text-decoration);
+}
+
+.nav-link.current,
+.contact-link.current {
+    color: var(--second-text-color);
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

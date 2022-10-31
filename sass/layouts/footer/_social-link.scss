@@ -1,0 +1,27 @@
+.footer-networking {
+    margin-left: 70px;
+}
+
+.social-link {
+    @include border(null, 50%);
+    width: 44px;
+    height: 44px;
+    // border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    @extend %align-element;
+    justify-content: center;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+        background-color: var(--second-text-color);
+        }
+}
+
+.footer-icon {
+    fill: var(--background-color);
+}
+
+.social-link {
+    color: currentColor;
+}
+

@@ -1,0 +1,65 @@
+.button {
+    @include font(700, 16px, 1.88, 0.06em);
+    @include border(1px solid transparent, 4px);
+    background-color: var(--second-text-color);
+    color: var(--background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.88;
+    cursor: pointer;
+    font-family: inherit;
+    // letter-spacing: 0.06em;
+    // border: 1px solid transparent;
+    // border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-second-color);
+        }
+}
+
+.btn {
+    @include font(500, 16px, 1.62, null);
+    @include border(none, 4px);
+    background-color: var(--buttons-color);
+    color: var(--font-main-color);
+    font-family: inherit;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    // border-radius: 4px;
+    // border: none;
+    display: inline-block;
+    padding: 6px 22px;
+    transition-property: background-color, box-shadow, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+        background-color: var(--second-text-color);
+        color: var(--background-color);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+

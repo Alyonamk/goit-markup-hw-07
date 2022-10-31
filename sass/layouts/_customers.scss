@@ -1,0 +1,32 @@
+.customers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.customers-item {
+    width: calc((100% - 150px + 12px) / 6);
+    display: flex;
+}
+
+.customers-link {
+    @include border(1px solid var(--icon-color), 4px);
+    width: 170px;
+    height: 92px;
+    // border: 1px solid var(--icon-color);
+    // border-radius: 4px;
+    @extend %align-element;
+    justify-content: center;
+    color: var(--icon-color);
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+        color: var(--second-text-color);
+        border-color: var(--second-text-color);
+        }
+}
+
+.customers-icon {
+    fill: currentColor;
+}
