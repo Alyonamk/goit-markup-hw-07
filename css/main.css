@@ -89,11 +89,11 @@ body {
 }
 
 .logo {
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   -webkit-text-decoration: var(--text-decoration);
           text-decoration: var(--text-decoration);
-  font-family: "Raleway", sans-serif;
   color: var(--second-text-color);
 }
 

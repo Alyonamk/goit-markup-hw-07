@@ -9,9 +9,9 @@
 }
 
 .logo {
+    font-family: "Raleway", sans-serif;
     @include font(null, 26px, 1.19, null);
     text-decoration: var(--text-decoration);
-    font-family: "Raleway", sans-serif;
     // font-size: 26px;
     // line-height: 1.19;
     color: var(--second-text-color);
