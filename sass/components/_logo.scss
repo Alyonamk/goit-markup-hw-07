@@ -1,13 +1,3 @@
-.logo-white {
-    color: var(--background-color);
-}
-
-.footer-logo {
-    display: flex;
-    margin-right: 0px;
-    margin-bottom: 20px;
-}
-
 .logo {
     font-family: "Raleway", sans-serif;
     @include font(null, 26px, 1.19, null);
@@ -18,8 +8,21 @@
     @extend %align-element;
 }
 
-.logo-web {
-    color: #000000;
+.logo__web {
     font-weight: 700;
     margin: 0px 93px 0px 0px;
+}
+
+.footer-logo {
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.logo--dark {
+    color: #000000;
+}
+
+.logo--light {
+    color: var(--background-color);
 }

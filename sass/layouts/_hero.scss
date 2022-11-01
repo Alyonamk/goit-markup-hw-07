@@ -14,12 +14,12 @@
     margin: 0 auto;
 }
 
-.container-hero {
+.container__hero {
     display: block;
     text-align: center;
 }
 
-.hero-title {
+.hero__title {
     @include font(900, 44px, 1.36, 0.06em);
     // font-weight: 900;
     // font-size: 44px;
@@ -34,3 +34,4 @@
     margin-right: auto;
     text-align: center;
 }
+

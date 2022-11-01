@@ -1,0 +1,38 @@
+.buttons__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.buttons__list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.buttons__list-btn {
+    @include font(500, 16px, 1.62, null);
+    @include border(none, 4px);
+    background-color: var(--buttons-color);
+    color: var(--font-main-color);
+    font-family: inherit;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    // border-radius: 4px;
+    // border: none;
+    display: inline-block;
+    padding: 6px 22px;
+    transition-property: background-color, box-shadow, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--second-text-color);
+        color: var(--background-color);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

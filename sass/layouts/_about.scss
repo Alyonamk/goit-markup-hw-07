@@ -1,19 +1,19 @@
 .about {
+    padding-top: 0;
+}
+
+.picture__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.about-us {
-    padding-top: 0;
-}
-
-.about-photo {
+.picture__list-photo {
     margin: auto;
     position: relative;
 }
 
-.about-text {
+.picture__list-text {
     @include font(700, 14px, 1.14, 0.03em);
     position: absolute;
     // font-weight: 700;

@@ -4,27 +4,22 @@
 @import './utils/placeholders';
 
 @import './base/common';
+@import './components/logo';
 @import './components/container';
 
-@import './layouts/logo';
-
-@import './components/section';
-
 @import './layouts/header';
+@import './components/section';
 @import './layouts/hero';
-@import './components/button';
+@import './components/hero__button';
 @import './components/modal';
 
 @import './utils/visually-hidden';
 @import './layouts/about';
 @import './layouts/advantage';
 @import './layouts/team';
-@import './layouts/networking-list';
 @import './layouts/customers';
 
-@import './layouts/footer/address';
-@import './layouts/footer/footer';
-@import './layouts/footer/footer-sign';
-@import './layouts/footer/social-link';
+@import './layouts/footer';
 
+@import './layouts/portfolio-filters';
 @import './layouts/portfolio-list';

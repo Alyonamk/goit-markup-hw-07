@@ -1,14 +1,14 @@
-.customers-list {
+.customer__list {
     display: flex;
     gap: 30px;
 }
 
-.customers-item {
+.customers__item {
     width: calc((100% - 150px + 12px) / 6);
     display: flex;
 }
 
-.customers-link {
+.customers__link {
     @include border(1px solid var(--icon-color), 4px);
     width: 170px;
     height: 92px;
@@ -27,6 +27,6 @@
         }
 }
 
-.customers-icon {
+.customers__icon {
     fill: currentColor;
 }

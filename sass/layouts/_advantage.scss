@@ -1,9 +1,9 @@
-.advantage-list {
+.info__list {
     display: flex;
     gap: 29px;
 }
 
-.advantage-item {
+.info__list-item {
     max-width: 270px;
     &:first-child {
         margin-left: 0;
@@ -39,7 +39,7 @@ $Icons: "antenna", "clock", "diagram", "astronaut";
 // }
 
 
-.advantage-title {
+.info__list-title {
     @include font(700, 10px, 1.14, null);
     font-size: inherit;
     // margin-bottom: 10px;
@@ -48,7 +48,7 @@ $Icons: "antenna", "clock", "diagram", "astronaut";
     text-transform: uppercase;
 }
 
-.advantage-text {
+.info__list-text {
     color: var(--owner-text-color);
     line-height: 1.71;
 }
