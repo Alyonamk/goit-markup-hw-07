@@ -59,6 +59,7 @@
 
 .btn-close {
     @include border(1px solid rgba(0, 0, 0, 0.1), 50%);
+    background-color: transparent;
     width: 30px;
     height: 30px;
     top: 10px;

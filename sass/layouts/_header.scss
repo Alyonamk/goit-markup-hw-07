@@ -65,17 +65,22 @@
     @extend %align-element;
 }
 
+.menu__link {
+    color: var(--font-main-color);
+}
+
 .connect__link,
 .menu__link {
     @include font(500, null, null, 0.02em);
     // font-weight: 500;
     // letter-spacing: 0.02em;
-    color: var(--font-main-color);
     text-decoration: var(--text-decoration);
     transition: color 250ms var(--timing-function);
 }
 
 .connect__link {
+    display: flex;
+    align-items: center;
     color: var(--owner-text-color);
     text-decoration: var(--text-decoration);
 }
